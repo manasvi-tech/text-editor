@@ -11,6 +11,9 @@ body {
     height: 100%;
 }
 
+
+/* navbar styling */
+
 nav {
     min-height: 10%;
     display: flex;
@@ -18,6 +21,9 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+
+/* removing default styling */
 
 button {
     background: none;
@@ -49,6 +55,19 @@ button {
     font-size: 1rem;
 }
 
+
+/* canvas styling */
+
+.canvas {
+    position: relative;
+    background-color: #ebebeb;
+    height: 77%;
+    width: 100%; 
+}
+
+
+/* footer styling */
+
 footer {
     min-height: 13%;
 }
@@ -56,13 +75,13 @@ footer {
 .options {
     height: 70%;
     width: 100%;
-    /* border: 1px solid black; */
     padding: 1rem 0;
     box-shadow: 2px 2px 4px #ebebeb;
     display: flex;
     gap: 14px;
     justify-content: center;
     color: #7C7C7C;
+    flex-wrap: wrap;
 }
 
 #fontDropdown {
@@ -151,10 +170,8 @@ button.right.active::before {
     border-radius: 7px;
 }
 
-.canvas {
-    background-color: #ebebeb;
-    height: 77%;
-}
+
+/* new container styling */
 
 .container {
 
@@ -169,6 +186,8 @@ button.right.active::before {
     /* user-select: none; */
 }
 
-.container:focus {
-    background-color: rgb(210, 210, 210);
+.container:focus{
+    background-color: #c7c7c7;
+    outline: none;
+    border: none;
 }
