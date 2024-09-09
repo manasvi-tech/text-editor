@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+nav {
+    min-height: 10%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.hover:hover{
+    transform: scale(1.15);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    
+}
+
+.undo>img,
+.redo>img {
+    width: 70%;
+}
+
+.undo>p,
+.redo>p {
+    color: #7C7C7C;
+    font-size: 1rem;
+}
+
+footer {
+    min-height: 13%;
+}
+
+.options {
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 1rem 0;
+    box-shadow: 2px 2px 4px #ebebeb;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    color: #7C7C7C;
+}
+
+#fontDropdown {
+    color: #7C7C7C;
+    padding: 5px;
+    font-size: 10px;
+    width: 12rem;
+    max-height: 100px;
+    /* Max height for the dropdown */
+    /* overflow-y: auto;  Enables scrolling */
+    border: none;
+    border-radius: 4px;
+
+    box-shadow: 2px 2px 2px #ebebeb;
+}
+
+.font-control {
+    color: #7C7C7C;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px #ebebeb;
+}
+
+.fontControl {
+    padding: 0 2px;
+}
+
+.font-control input {
+    width: 2rem;
+    height: 90%;
+    border: none;
+    font-size: 13px;
+    color: #7C7C7C;
+    padding: 2.5px;
+}
+
+/* to remove the by-default arrows with type-number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fa-solid {
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+.display {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+button.active {
+    background-color: #ddd;
+    /* or any other style to indicate activation */
+}
+
+button.center.active::before {
+    content: 'Center';
+}
+
+button.left.active::before {
+    content: 'Left';
+}
+
+button.right.active::before {
+    content: 'Right';
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.addText {
+    background-color: #ebebeb;
+    margin: 0.9rem 0;
+    padding: 0.3rem 1.5rem;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+    border-radius: 7px;
+}
+
+.canvas {
+    background-color: #ebebeb;
+    height: 77%;
+}
+
+.container {
+
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    min-width: 15rem;
+    padding: 5px;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    cursor: move;
+    /* user-select: none; */
+}
+
+.container:focus {
+    background-color: rgb(210, 210, 210);
+}

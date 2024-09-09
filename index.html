@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrare Assignment</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- font icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lobster&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <button class="undo hover" onclick="undo()">
+            <img src="images/undo.png" alt="">
+            <p>undo</p>
+        </button>
+        <button class="redo hover" onclick="redo()">
+            <img src="images/redo.png" alt="">
+            <p>redo</p>
+        </button>
+
+    </nav>
+    <div class="canvas">
+    
+    </div>
+
+    <footer>
+        <div class="options">
+            <div class="fontOptions">
+                <select id="fontDropdown">
+                    <option value="Verdana">Verdana</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Charcoal">Charcoal</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Brush Script MT">Brush Script MT</option>
+                </select>
+            </div>
+
+
+            <div class="font-control">
+                <button class="fontControl hover" onclick="decreaseFontSize()">-</button>
+                <input type="number" id="fontSizeInput" value="10" min="1" onchange="setFontSize()" />
+                <button class="fontControl hover" onclick="increaseFontSize()">+</button>
+            </div>
+
+            <button id="bold" class="hover"><i class="fa-solid fa-bold"></i></button>
+            <button id="italic" class="hover"><i class="fa-solid fa-italic"></i></button>
+            <button id="underline" class="hover"><i class="fa-solid fa-underline"></i></button>
+            <button id="align" class="hover" onclick="showControls()"><i class="fa-solid fa-align-center"></i></button>
+            <div class="align-control hidden">
+                <button id="align-left" onclick="setTextAlign('left')" class="alignControl">
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+                <button id="align-center" onclick="setTextAlign('center')" class="alignControl">
+                    <i class="fa-solid fa-align-center"></i>
+                </button>
+                <button id="align-right" onclick="setTextAlign('right')" class="alignControl">
+                    <i class="fa-solid fa-align-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="text">
+            <button class="addText hover">
+                Add Text
+            </button>
+        </div>
+    </footer>
+    <script src="js/drag.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/changeProperties.js"></script>
+</body>
+
+</html>
